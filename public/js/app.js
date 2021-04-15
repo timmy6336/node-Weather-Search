@@ -24,8 +24,8 @@ weatherForm.addEventListener('submit', (e) =>
             else
             {
                 //console.log(data.location,data.temperature)
-                place.textContent = "Forecast for " + data.location
-                forecast.textContent = "Currently " + data.temperature + " , But it feels like it is " + data.feel + '.'
+                place.textContent = "Forecast for " + data.location + ': ' + data.overcast 
+                forecast.textContent = 'It is currently ' + data.temperature + ' degrees out but it feels like ' + data.feel + ' degrees. the humidity is ' + data.humidity + '%.'
             }
         })
     })

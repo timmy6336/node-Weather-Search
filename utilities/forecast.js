@@ -20,6 +20,8 @@ const forecast = (lat, lon, callback) =>
             {
                 temperature: info.temperature,
                 feelsLike: info.feelslike,
+                overcast: info.weather_descriptions,
+                humidity: info.humidity,
                 name: res.location.name
             }
             callback(undefined, data)
