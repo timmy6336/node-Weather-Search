@@ -11,7 +11,7 @@ const geocode = (address, callback) =>
         }
         else if(res.features.length == 0)
         {
-            callback('Invald Location', undefined)
+            callback('Invald Location!', undefined)
         }
         else
         {
