@@ -45,7 +45,7 @@ app.get('/help', (req, res) =>{
     res.render('help',{
         title: 'Help Page',
         name: 'Timmy Roma',
-        message: '/about to access the about page!'
+        message: 'Type any location, (city, zipcode, building name, etc...) and press search to get the forecast for that location'
     })
 })
 
